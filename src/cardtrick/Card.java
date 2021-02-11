@@ -11,15 +11,18 @@ package cardtrick;
  */
 public class Card {
     
-    private String suit; //clubs, spades, diamonds, hearts
+   private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
 
-   public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
-    /**
-     * @return the suit
-     */
+   public static final String [] SUITS = {
+                "Hearts", "Diamonds", "Spades", "Clubs"};
+  
+   public Card(int value, String suit) {
+        this.value = value;
+        this.suit = suit;
+   }
     public String getSuit() {
-        return suit;
+        return this.suit;
     }
 
     /**
@@ -33,7 +36,7 @@ public class Card {
      * @return the value
      */
     public int getValue() {
-        return value;
+        return this.value;
     }
 
     /**
