@@ -30,6 +30,8 @@ public class CardTrick {
             Card c = new Card(value, suit);
             magicHand[i] = c;
         }
+         
+        Card luckyCard = new Card(2, "Hearts");   //Hard coded object
         
         System.out.println("Here are the 7 cards in the hand");
         for (Card c : magicHand) {
